@@ -1,12 +1,42 @@
 # House Price Prediction
 
-AI & Data Science Internship Project (Week 1)
+Machine Learning project developed as part of the **XYlofy AI Internship Program (Week 1)**.
 
-## Objective
+---
 
-Build machine learning models to predict house prices using housing features and compare model performance.
+# 📌 Project Overview
 
-## Technologies Used
+This project focuses on predicting house prices using Machine Learning techniques. The objective is to analyze housing features, preprocess the dataset, train regression models, and evaluate their performance in predicting property prices.
+
+The project follows a complete Machine Learning workflow including:
+
+- Data Exploration
+- Data Cleaning
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- Data Visualization
+- Business Insights
+
+---
+
+# 🎯 Objective
+
+Build and compare Machine Learning models to predict house prices using housing characteristics such as:
+
+- Area
+- Number of Bedrooms
+- Number of Bathrooms
+- Number of Stories
+- Parking Availability
+- Air Conditioning
+- Furnishing Status
+- Preferred Area
+- Other Property Features
+
+---
+
+# 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -15,29 +45,181 @@ Build machine learning models to predict house prices using housing features and
 - Matplotlib
 - Seaborn
 - Jupyter Notebook
+- VS Code
+- Git & GitHub
 
-## Project Structure
+---
+
+# 📂 Project Structure
 
 ```text
 HousePricePrediction_AnushkaDas/
 │
 ├── data/
+│   ├── Housing.csv
+│   └── Housing_Cleaned.csv
+│
 ├── charts/
+│
 ├── reports/
+│
 ├── analysis.ipynb
 ├── README.md
 └── .gitignore
 ```
 
-## Current Progress
+---
 
-### Day 1
-- Environment setup
-- Dataset loading
-- Data exploration
-- Missing value analysis
-- Duplicate check
-- Feature identification
+# 🔍 Dataset Information
 
-### Status
-In Progress
+- Dataset: Housing Prices Dataset
+- Records: 545
+- Features: 13
+- Target Variable: Price
+
+The dataset contains information related to residential properties including location preferences, furnishing status, parking facilities, and other housing attributes.
+
+---
+
+# 📅 Project Progress
+
+## Day 1 – Data Exploration
+
+### Tasks Completed
+
+- Created project structure
+- Set up Python virtual environment
+- Loaded dataset using Pandas
+- Displayed first 10 rows
+- Checked dataset dimensions
+- Identified target and feature columns
+- Performed missing value analysis
+- Performed duplicate value analysis
+- Identified categorical columns
+- Conducted initial data exploration
+
+### Key Findings
+
+- Dataset contains 545 records and 13 features
+- No missing values found
+- No duplicate records found
+- Multiple categorical features require encoding before model training
+
+---
+
+## Day 2 – Data Cleaning & Preprocessing
+
+### Tasks Completed
+
+- Created working copy of dataset
+- Verified data quality
+- Converted binary categorical features (Yes/No → 1/0)
+- Applied One-Hot Encoding on furnishing status
+- Created feature matrix (X)
+- Created target variable (y)
+- Generated cleaned dataset
+
+### Key Findings
+
+- Dataset required minimal cleaning
+- No records needed removal
+- All categorical features successfully converted into machine-learning-ready format
+
+---
+
+## Day 3 – Model Building & Evaluation
+
+### Tasks Completed
+
+- Performed Train-Test Split (80/20)
+- Trained Linear Regression model
+- Trained Random Forest Regressor
+- Generated predictions
+- Evaluated model performance
+- Compared model results
+- Analyzed feature importance
+
+### Model Results
+
+| Model | MAE | RMSE | R² Score |
+|--------|---------:|---------:|---------:|
+| Linear Regression | 970,043.40 | 1,324,506.96 | **0.6529** |
+| Random Forest Regressor | 1,019,598.40 | 1,399,212.96 | 0.6127 |
+
+### Best Performing Model
+
+**Linear Regression**
+
+The Linear Regression model achieved the highest R² score and the lowest prediction errors, making it the best-performing model for this dataset.
+
+---
+
+# 📊 Key Insights
+
+The most influential features affecting house prices were:
+
+1. Bathrooms
+2. Air Conditioning
+3. Hot Water Heating
+4. Preferred Area
+5. Number of Stories
+
+Additional observations:
+
+- Houses with more bathrooms generally command significantly higher prices.
+- Air conditioning and hot water heating contribute positively to property value.
+- Properties located in preferred areas tend to have higher market prices.
+- Furnished homes are generally valued higher than unfurnished homes.
+- Linear Regression outperformed Random Forest on this dataset.
+
+---
+
+# 📈 Visualizations
+
+The project includes:
+
+- House Price Distribution
+- Correlation Heatmap
+- Area vs Price Analysis
+- Actual vs Predicted Price Comparison
+- Feature Importance Analysis
+
+---
+
+# 💡 Business Recommendation
+
+Real estate businesses should focus on promoting premium amenities such as:
+
+- Additional Bathrooms
+- Air Conditioning
+- Hot Water Heating
+- Preferred Locations
+- Fully Furnished Properties
+
+These features show a strong positive influence on house prices and can significantly improve property valuation.
+
+---
+
+# 🚀 Project Status
+
+✅ Day 1 Completed
+
+✅ Day 2 Completed
+
+✅ Day 3 Completed
+
+⏳ Day 4 – Visualizations & Final Insights
+
+⏳ Final Report Generation
+
+⏳ Internship Submission
+
+---
+
+# 👩‍💻 Author
+
+**Anushka Das**
+
+AI & Data Science Intern – XYlofy AI
+
+GitHub: AN-ai-del
