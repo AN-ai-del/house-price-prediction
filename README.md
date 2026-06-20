@@ -221,6 +221,17 @@ The project includes:
 - Actual vs Predicted Price Comparison
 - Feature Importance Analysis
 
+## 📈 Sample Visualizations
+
+### House Price Distribution
+![Distribution](charts/house_price_distribution.png)
+
+### Correlation Heatmap
+![Heatmap](charts/correlation_heatmap.png)
+
+### Feature Importance
+![Feature Importance](charts/feature_importance.png)
+
 ---
 
 # 💡 Business Recommendation
