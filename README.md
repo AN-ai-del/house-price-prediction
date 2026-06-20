@@ -16,6 +16,7 @@ The project follows a complete Machine Learning workflow including:
 - Model Training
 - Model Evaluation
 - Data Visualization
+- Feature Importance Analysis
 - Business Insights
 
 ---
@@ -60,11 +61,17 @@ HousePricePrediction_AnushkaDas/
 │   └── Housing_Cleaned.csv
 │
 ├── charts/
+│   ├── house_price_distribution.png
+│   ├── area_vs_price.png
+│   ├── correlation_heatmap.png
+│   ├── actual_vs_predicted.png
+│   └── feature_importance.png
 │
 ├── reports/
 │
-├── analysis.ipynb
+├── House_Price_Prediction.ipynb
 ├── README.md
+├── requirements.txt
 └── .gitignore
 ```
 
@@ -72,10 +79,10 @@ HousePricePrediction_AnushkaDas/
 
 # 🔍 Dataset Information
 
-- Dataset: Housing Prices Dataset
-- Records: 545
-- Features: 13
-- Target Variable: Price
+- **Dataset:** Housing Prices Dataset
+- **Records:** 545
+- **Features:** 13
+- **Target Variable:** Price
 
 The dataset contains information related to residential properties including location preferences, furnishing status, parking facilities, and other housing attributes.
 
@@ -88,7 +95,6 @@ The dataset contains information related to residential properties including loc
 ### Tasks Completed
 
 - Created project structure
-- Set up Python virtual environment
 - Loaded dataset using Pandas
 - Displayed first 10 rows
 - Checked dataset dimensions
@@ -96,14 +102,14 @@ The dataset contains information related to residential properties including loc
 - Performed missing value analysis
 - Performed duplicate value analysis
 - Identified categorical columns
-- Conducted initial data exploration
+- Conducted exploratory data analysis
 
 ### Key Findings
 
 - Dataset contains 545 records and 13 features
 - No missing values found
 - No duplicate records found
-- Multiple categorical features require encoding before model training
+- Multiple categorical features required encoding before model training
 
 ---
 
@@ -113,10 +119,10 @@ The dataset contains information related to residential properties including loc
 
 - Created working copy of dataset
 - Verified data quality
-- Converted binary categorical features (Yes/No → 1/0)
+- Converted binary categorical features (**Yes/No → 1/0**)
 - Applied One-Hot Encoding on furnishing status
-- Created feature matrix (X)
-- Created target variable (y)
+- Created feature matrix (**X**)
+- Created target variable (**y**)
 - Generated cleaned dataset
 
 ### Key Findings
@@ -131,7 +137,7 @@ The dataset contains information related to residential properties including loc
 
 ### Tasks Completed
 
-- Performed Train-Test Split (80/20)
+- Performed Train-Test Split (**80/20**)
 - Trained Linear Regression model
 - Trained Random Forest Regressor
 - Generated predictions
@@ -144,13 +150,44 @@ The dataset contains information related to residential properties including loc
 | Model | MAE | RMSE | R² Score |
 |--------|---------:|---------:|---------:|
 | Linear Regression | 970,043.40 | 1,324,506.96 | **0.6529** |
-| Random Forest Regressor | 1,019,598.40 | 1,399,212.96 | 0.6127 |
+| Random Forest Regressor | 1,022,560.63 | 1,401,497.30 | 0.6114 |
 
 ### Best Performing Model
 
 **Linear Regression**
 
 The Linear Regression model achieved the highest R² score and the lowest prediction errors, making it the best-performing model for this dataset.
+
+---
+
+## Day 4 – Data Visualization & Feature Importance
+
+### Tasks Completed
+
+- Created House Price Distribution chart
+- Created Area vs Price scatter plot
+- Generated Correlation Heatmap
+- Visualized Actual vs Predicted Prices
+- Performed Feature Importance Analysis
+- Identified major drivers of house prices
+
+### Key Findings
+
+- House prices show a right-skewed distribution.
+- Property area has a positive relationship with house prices.
+- Bathrooms, air conditioning, hot water heating, and preferred area emerged as major contributors to house prices.
+- Linear Regression predictions closely follow actual prices.
+
+---
+
+## Day 5 – Final Analysis & Business Insights
+
+### Tasks Completed
+
+- Summarized project findings
+- Generated business recommendations
+- Documented limitations
+- Proposed future improvements
 
 ---
 
@@ -164,7 +201,7 @@ The most influential features affecting house prices were:
 4. Preferred Area
 5. Number of Stories
 
-Additional observations:
+### Additional Observations
 
 - Houses with more bathrooms generally command significantly higher prices.
 - Air conditioning and hot water heating contribute positively to property value.
@@ -200,19 +237,36 @@ These features show a strong positive influence on house prices and can signific
 
 ---
 
-# 🚀 Project Status
+# ⚠️ Limitations
 
-✅ Day 1 Completed
+- Dataset size is relatively small.
+- Additional market variables were unavailable.
+- Location information was limited.
+- Economic indicators were not included.
 
-✅ Day 2 Completed
+These factors may impact prediction accuracy.
 
-✅ Day 3 Completed
+---
 
-⏳ Day 4 – Visualizations & Final Insights
+# 🚀 Future Improvements
 
-⏳ Final Report Generation
+- Collect larger datasets.
+- Include geographical coordinates.
+- Incorporate market trends.
+- Experiment with XGBoost and LightGBM.
+- Deploy the model as a web application.
+- Use real-time housing data.
 
-⏳ Internship Submission
+---
+
+# ✅ Project Status
+
+- ✅ Day 1 Completed
+- ✅ Day 2 Completed
+- ✅ Day 3 Completed
+- ✅ Day 4 Completed
+- ✅ Day 5 Completed
+- ✅ Project Submitted
 
 ---
 
@@ -220,6 +274,6 @@ These features show a strong positive influence on house prices and can signific
 
 **Anushka Das**
 
-AI & Data Science Intern – XYlofy AI
+**AI & Data Science Intern – XYlofy AI**
 
-GitHub: AN-ai-del
+**GitHub:** AN-ai-del
